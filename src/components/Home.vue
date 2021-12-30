@@ -2,7 +2,7 @@
   <div class="basic-layout">
     <div class="nav-side"></div>
     <div class="content-right">
-      <div class="nav-top">mianbaoxue</div>
+      <div class="nav-top">面包屑</div>
       <div class="wrapper">
         <div class="main-page">
           <router-view></router-view>

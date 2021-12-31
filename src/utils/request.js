@@ -37,7 +37,9 @@ function request(option) {
   if (option.method.toLowerCase() === 'get') {
     option.params = option.data;
   }
-
+  if (typeof option.mock != 'undefined') {
+    config.mock = option.mock;
+  }
   if (config.env == 'prod') {
     service.defaults.baseURL = config.baseApi;
   } else {
